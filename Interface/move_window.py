@@ -12,5 +12,7 @@ cv2.moveWindow(title2, 400, 50)
 
 cv2.imshow(title1, image) # 행렬 원소를 영상으로 표시
 cv2.imshow(title2, image)
-cv2.waitKey(0) # 키 이벤트 대기
-cv2.destroyAllWindows() # 열린 모든 윈도우 파괴 
+
+cv2.waitKey(0) # 윈도우 키 이벤트 대기
+#input( "Enter to quit" )
+cv2.destroyAllWindows() # 열린 모든 윈도우 제거 

@@ -1,4 +1,4 @@
-# openCV 인터페이스 기초 / 사용자 인터페이스 및 I/O 처리 
+# CHAPTER 04 OpenCV 인터페이스 기초 / 사용자 인터페이스 및 I/O 처리 
 
 
 * [01](move_window.ipynb) - 윈도우 이동
