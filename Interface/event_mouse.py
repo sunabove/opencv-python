@@ -10,6 +10,8 @@ def onMouse(event, x, y, flags, param): # 마우스 콜백 함수 정의
         print("Right up")
     elif event == cv2.EVENT_LBUTTONDBLCLK:
         print("Left Double Click")
+    elif event == cv2.EVENT_RBUTTONDBLCLK:
+        print("Right Double Click")
     pass
 pass
 

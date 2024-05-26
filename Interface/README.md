@@ -1,12 +1,12 @@
 # CHAPTER 04 OpenCV 인터페이스 기초 / 사용자 인터페이스 및 I/O 처리 
 
-
 * [01](move_window.ipynb) - 윈도우 이동
 * [02](window_resize.ipynb) - 윈도우 크기 변경
 
 * [info](event_info.ipynb) - 이벤트 처리 함수
 * [03](event_key.ipynb) - 키 이벤트 사용 
 * [04](event_mouse.ipynb) - 마우스 이벤트 
+
 * [05](event_trackar.ipynb) - 트랙바 이벤트
 * [06](event_mouse_trackbar.ipynb) - 마우스 & 트랙바 이벤트 
     
