@@ -19,7 +19,7 @@ cv2.imshow("keyboard Event", image)   # Keyboard Event 이름의 윈도우에 �
 while True: # 무한 반복
     key = cv2.waitKeyEx(100) # 100ms 동안 키 이벤트 대기
 
-    if key == 27: break # ESC 누르면 종료
+    if key == 27: break # ESC 누르면 종료, 가장 가까운 반복문을 벗어남
 
     try:
         result = switch_case[ key ]
