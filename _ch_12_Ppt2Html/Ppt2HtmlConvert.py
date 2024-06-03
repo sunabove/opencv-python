@@ -29,54 +29,54 @@ for i, slide in enumerate( ppt.slides ):
     print( f"saving a ppt slide to {file_path} ..." )    
     single_slide_presentation.save(file_path, slides.export.SaveFormat.HTML, options )
 
+    content = ""
+    
     # convert utf-8-bom to utf-8
     with open(file_path, 'r', encoding='utf-8-sig') as file:
         # 파일의 모든 내용을 읽어들입니다.
-        fileContent = file.read().strip()
+        content = file.read().strip()
     pass
 
     with open(file_path, 'w', encoding='utf-8') as file:
-        file.write( fileContent )
+        file.write( content )
     pass
     # // convert utf-8-bom to utf-8
 
     #continue 
 
-    fileContent = ""
-
     with open(file_path, 'r', encoding='utf-8') as file:
         # 파일의 모든 내용을 읽어들입니다.
-        fileContent = file.read().strip()
+        content = file.read().strip()
     pass
 
     with open(file_path, 'w', encoding='utf-8') as file:
 
         if 1 : 
             # remove water-mark
-            idxApose = fileContent.index( "Created with Aspose.Slides" )
-            idxGtransform = fileContent.rfind( "<g transform=\"matrix", 0, idxApose )
+            idxApose = content.index( "Created with Aspose.Slides" )
+            idxGtransform = content.rfind( "<g transform=\"matrix", 0, idxApose )
 
-            idxPtyLtd = fileContent.rindex( "Aspose Pty Ltd.", idxApose )
-            idxG = fileContent.index( "</g>", idxPtyLtd )
+            idxPtyLtd = content.rindex( "Aspose Pty Ltd.", idxApose )
+            idxG = content.index( "</g>", idxPtyLtd )
 
-            a = fileContent[ 0 : idxGtransform ]
-            b = fileContent[ idxG + 4 : ]
-            fileContent = a + b
+            a = content[ 0 : idxGtransform ]
+            b = content[ idxG + 4 : ]
+            content = a + b
             # // remove water-mark
         pass
 
         if 1 : 
             # remove slide title
-            idxSlideTtitleStart = fileContent.index( "<div class=\"slideTitle\">" )
-            idxSlideTtitleClose = fileContent.index( "</div>", idxSlideTtitleStart )
+            idxSlideTtitleStart = content.index( "<div class=\"slideTitle\">" )
+            idxSlideTtitleClose = content.index( "</div>", idxSlideTtitleStart )
 
-            a = fileContent[ 0 : idxSlideTtitleStart ]
-            b = fileContent[ idxSlideTtitleClose + 5 : ]
-            fileContent = a + b
+            a = content[ 0 : idxSlideTtitleStart ]
+            b = content[ idxSlideTtitleClose + 5 : ]
+            content = a + b
             # // remove slide title
         pass
 
-        file.write( fileContent )
+        file.write( content )
     pass
 pass
 
