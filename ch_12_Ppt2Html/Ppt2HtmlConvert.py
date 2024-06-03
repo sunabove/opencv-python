@@ -5,7 +5,7 @@ from IPython.display import clear_output
 clear_output()
 
 # Load the presentation file
-ppt = slides.Presentation("c:/test/test.pptx")
+ppt = slides.Presentation( "c:/test/test.pptx" )
 
 # Create HTML options
 options = slides.export.HtmlOptions()
@@ -80,7 +80,7 @@ for i, slide in enumerate( ppt.slides ):
     pass
 pass
 
-print(f"Converted {len(ppt.slides)} slides to HTML files.")
+print( f"Converted {len(ppt.slides)} slides to HTML files." )
 
 # Save as HTML
 #all_html_file = "c:/test/test.html"
