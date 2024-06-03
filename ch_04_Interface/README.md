@@ -15,25 +15,25 @@
 * [07-01](07_draw_line.py) - 직선 그리기
 * [07-02](07_draw_rect.py) - 사각형 그리기
 
+* [08](08_put_text.ipynb) - 글자 쓰기
+* [09](09_draw_circle.ipynb) - 원 그리기
+* [10](10_draw_ellipse.ipynb) - 타원 & 호 그리기
 
-* [08](08_put_text.ipynb) - 글자 쓰기* 
-* [09](09_draw_circle.ipynb) - 원 그리기 
-* [10](10_draw_ellipse.ipynb) - 타원 & 호 그리기 
+* [11](11_read_image01.ipynb) - 영상 파일 일기 01
+* [12](12_read_image02.ipynb) - 영상 파일 일기 02
+* [13](13_read_image03.ipynb) - 영상 파일 일기 02
+* 
+* [14](14_write_image01.ipynb) - 행렬 영상 저장 01
+* [15](15_write_image02.ipynb) - 행렬 영상 저장 02
 
-* [11](read_image01.ipynb) - 영상 파일 일기 01 
-* [12](read_image02.ipynb) - 영상 파일 일기 02
-* [13](read_image03.ipynb) - 영상 파일 일기 02
-* [14](write_image01.ipynb) - 행렬 영상 저장 01
-* [15](write_image02.ipynb) - 행렬 영상 저장 02
+* [info](16_info_VideoCapture.ipynb) - VideoCapture 함수 설명
+* [16](16_read_camera.ipynb) - 카메라 프레임 읽기
+* [17](17_set_camera_atty.ipynb) - 카메라 속성 설정
+* [18](18_write_camera_frame.ipynb) - 카메라 프레임 동영상파일로 저장
+* [19](19_read_video_file.ipynb) - 동영상 파일 읽기
 
-* [info](info_VideoCapture.ipynb) - VideoCapture 함수 설명   
-* [16](read_camera.ipynb) - 카메라 프레임 읽기 
-* [17](set_camera_atty.ipynb) - 카메라 속성 설정 
-* [18](write_camera_frame.ipynb) - 카메라 프레임 동영상파일로 저장
-* [19](read_video_file.ipynb) - 동영상 파일 읽기
-
-* [info](matplotlib_info.ipynb) - Matplotlib 함수 설명 
-* [20](matplatlib.ipynb) - Matplotlib 라이브러리로 영상 표시 
-* [21](matplotlib_interplation.ipynb) - Matplotlib 서브플롯 그리기 및 보간 적용 
-* [22](matplotlib_plot.ipynb) - Matplotlib 그래프 그리기  
+* [info](20_matplotlib_info.ipynb) - Matplotlib 함수 설명
+* [20](20_matplatlib.ipynb) - Matplotlib 라이브러리로 영상 표시
+* [21](21_matplotlib_interplation.ipynb) - Matplotlib 서브 플롯 및 보간 적용
+* [22](22_matplotlib_plot.ipynb) - Matplotlib 그래프 그리기
  
