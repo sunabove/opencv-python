@@ -12,6 +12,6 @@ pass
 
 cv2.imshow(title, image)
 
-cv2.createTrackbar("Brightness", title, image[0][0], 255, onChange) # 트랙바 콜백
+cv2.createTrackbar("Brightness", title, 0, 255, onChange) # 트랙바 콜백 설정
 cv2.waitKey(0)
 cv2.destroyAllWindows()

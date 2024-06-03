@@ -3,8 +3,7 @@
 * [01](01_move_window.py) - 윈도우 이동
 * [02](02_window_resize.py) - 윈도우 크기 변경
 
-* [03-01](03_event_info.ipynb) - 이벤트 처리 함수* 
-* [03-02](03_event_key.py) - 키 이벤트 사용 
+* [03](03_event_key.py) - 키 이벤트 사용 
 
 
 * [04](04_event_mouse.py) - 마우스 이벤트 
@@ -13,7 +12,6 @@
 * [06](06_event_mouse_trackbar.py) - 마우스 & 트랙바 이벤트 
 
 
-* [07](07_draw_line_rect.ipynb) - 직선 & 사각형 그리기
 * [07-01](07_draw_line.py) - 직선 그리기
 * [07-02](07_draw_rect.py) - 사각형 그리기
 

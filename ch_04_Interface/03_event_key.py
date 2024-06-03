@@ -6,8 +6,10 @@ import cv2
 switch_case = {
     ord('a'): "a 키 입력", # ord() 함수 문자 -> 아스키 코드 변환
     ord('b'): "b 키 입력",
+    ord('c'): "c 키 입력",
     0x41 : "A키 입력",
     int('0x42', 16) : "B키 입력", # 0x42(16진수) -> 10진수 변환
+    0x43 : "C키 입력",
     2424832 : "왼쪽 화살표 입력", # 0x250000
     2490368 : "윗쪽 화살표 입력", # 0x260000
     2555904 : "오른쪽 화살표 입력", # 0x270000
@@ -16,7 +18,7 @@ switch_case = {
 
 image = np.ones((200, 300), float) # 원소값 1인 행렬 생성
 cv2.namedWindow("Keyboard Event")     # Keyboard Event 이름의 윈도우 생성
-cv2.imshow("keyboard Event", image)   # Keyboard Event 이름의 윈도우에 이미지 출력
+cv2.imshow("Keyboard Event", image)   # Keyboard Event 이름의 윈도우에 이미지 출력
 
 while True: # 무한 반복
     key = cv2.waitKeyEx(100) # 100ms 동안 키 이벤트 대기

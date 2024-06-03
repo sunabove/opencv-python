@@ -3,8 +3,8 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-blue, green, red = (0, 0, 255), (0, 255, 0), (255, 0, 0 )
-image = np.zeros((400, 600,3), np.uint8)  # 3채널 영상
+blue, green, red = (0, 0, 255), (0, 255, 0), (255, 0, 0)
+image = np.zeros((400, 600, 3), np.uint8)  # 3채널 영상
 image[:] = 255 # 3채널 흰색
 
 pt1, pt2 = (50, 50), (250, 150)
