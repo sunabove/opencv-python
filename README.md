@@ -1,9 +1,8 @@
-# opencv-python
-Opencv 파이썬 기반 영상처리
+# Opencv 파이썬 기반 영상처리
 
 * [CHAPTER 04](ch_04_interface/README.md) - 사용자 인터페이스 및 I/O 처리
 
-* [CHAPTER 05](ch_05_operationOnArrays/README.md) - 기본 배열 연산
+* [CHAPTER 05](ch_05_array_operation/README.md) - 배열 연산
 
 * [CHAPTER 06](ch_06_pixel/README.md) - 화소 처리
 
