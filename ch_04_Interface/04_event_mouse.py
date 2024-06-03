@@ -1,3 +1,5 @@
+# 마우스 이벤트 예제
+
 import numpy as np
 import cv2
 

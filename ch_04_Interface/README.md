@@ -1,19 +1,24 @@
 # CHAPTER 04 OpenCV 인터페이스 기초 / 사용자 인터페이스 및 I/O 처리 
 
-* [01](move_window.ipynb) - 윈도우 이동
-* [02](window_resize.ipynb) - 윈도우 크기 변경
+* [01](01_move_window.py) - 윈도우 이동
+* [02](02_window_resize.py) - 윈도우 크기 변경
 
-* [info](event_info.ipynb) - 이벤트 처리 함수
-* [03](event_key.ipynb) - 키 이벤트 사용 
-* [04](event_mouse.ipynb) - 마우스 이벤트 
+* [03-01](03_event_info.ipynb) - 이벤트 처리 함수
+* 
+* [03-02](03_event_key.py) - 키 이벤트 사용 
+* [04](04_event_mouse.py) - 마우스 이벤트 
 
-* [05](event_trackar.ipynb) - 트랙바 이벤트
-* [06](event_mouse_trackbar.ipynb) - 마우스 & 트랙바 이벤트 
+* [05](05_event_trackbar.py) - 트랙바 이벤트
+* [06](06_event_mouse_trackbar.py) - 마우스 & 트랙바 이벤트 
     
-* [07](07.draw_line_rect.ipynb) - 직선 & 사각형 그리기
-* [08](08.put_text.ipynb) - 글자 쓰기 
-* [09](09.draw_circle.ipynb) - 원 그리기 
-* [10](draw_ellipse.ipynb) - 타원 & 호 그리기 
+* [07](07_draw_line_rect.ipynb) - 직선 & 사각형 그리기
+* [07-01](07_draw_line.py) - 직선 그리기
+* [07-02](07_draw_rect.py) - 사각형 그리기
+
+
+* [08](08_put_text.ipynb) - 글자 쓰기* 
+* [09](09_draw_circle.ipynb) - 원 그리기 
+* [10](10_draw_ellipse.ipynb) - 타원 & 호 그리기 
 
 * [11](read_image01.ipynb) - 영상 파일 일기 01 
 * [12](read_image02.ipynb) - 영상 파일 일기 02

@@ -1,3 +1,5 @@
+# 키 이벤트 사용 예제
+
 import numpy as np
 import cv2
 

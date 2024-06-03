@@ -1,3 +1,4 @@
+# 윈도우 이동
 import numpy as np
 import cv2
 

@@ -1,3 +1,5 @@
+# 직선 그리기 예제
+
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt

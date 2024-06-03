@@ -1,3 +1,5 @@
+# 마우스 & 트랙바 이벤트
+
 import numpy as np
 import cv2
 
