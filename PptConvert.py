@@ -27,27 +27,43 @@ for i, slide in enumerate( ppt.slides ):
     file_path = f"c:/test/test_{i+1:03d}.html"
     
     print( f"saving a ppt slide to {file_path} ..." )    
-    single_slide_presentation.save(file_path, slides.export.SaveFormat.HTML, options)
+    single_slide_presentation.save(file_path, slides.export.SaveFormat.HTML, options )
+
+    # convert utf-8-bom to utf-8
+    with open(file_path, 'r', encoding='utf-8-sig') as file:
+        # 파일의 모든 내용을 읽어들입니다.
+        fileContent = file.read().strip()
+    pass
+
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write( fileContent )
+    pass
+    # // convert utf-8-bom to utf-8
+
+    #continue 
 
     fileContent = ""
 
     with open(file_path, 'r', encoding='utf-8') as file:
         # 파일의 모든 내용을 읽어들입니다.
-        fileContent = file.read()
+        fileContent = file.read().strip()
     pass
 
     with open(file_path, 'w', encoding='utf-8') as file:
 
-        # remove mark
-        idxApose = fileContent.index( "Created with Aspose.Slides" )
-        idxGtransform = fileContent.rindex( "<g transform=\"matrix", 0, idxApose )
+        if 1 : 
+            # remove water-mark
+            idxApose = fileContent.index( "Created with Aspose.Slides" )
+            idxGtransform = fileContent.rfind( "<g transform=\"matrix", 0, idxApose )
 
-        idxPtyLtd = fileContent.rindex( "Aspose Pty Ltd.", idxApose )
-        idxG = fileContent.index( "</g>", idxPtyLtd )
+            idxPtyLtd = fileContent.rindex( "Aspose Pty Ltd.", idxApose )
+            idxG = fileContent.index( "</g>", idxPtyLtd )
 
-        fileContent = fileContent[ 0 : idxGtransform ]
-        filecontent = fileContent + fileContent[ idxG + 4 : ]
-        # // remove mark
+            a = fileContent[ 0 : idxGtransform ]
+            b = fileContent[ idxG + 4 : ]
+            fileContent = a + b
+            # // remove water-mark
+        pass
 
         if 1 : 
             # remove slide title
@@ -55,7 +71,8 @@ for i, slide in enumerate( ppt.slides ):
             idxSlideTtitleClose = fileContent.index( "</div>", idxSlideTtitleStart )
 
             a = fileContent[ 0 : idxSlideTtitleStart ]
-            filecontent = a + fileContent[ idxSlideTtitleClose + 5 : ]
+            b = fileContent[ idxSlideTtitleClose + 5 : ]
+            fileContent = a + b
             # // remove slide title
         pass
 
