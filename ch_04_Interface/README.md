@@ -17,7 +17,7 @@
 
 * [08](08_put_text.py) - 문자 출력
 * [09](09_draw_circle.py) - 원 그리기
-* [10](10_draw_ellipse.ipynb) - 타원 & 호 그리기
+* [10](10_draw_ellipse.ipynb) - 타원 호 그리기
 
 * [11](11_read_image01.ipynb) - 영상 파일 일기 01
 * [12](12_read_image02.ipynb) - 영상 파일 일기 02
