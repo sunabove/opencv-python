@@ -14,6 +14,7 @@
 
 * [07-01](07_draw_line.py) - 직선 그리기
 * [07-02](07_draw_rect.py) - 사각형 그리기
+* [07-03](07_draw_rect_line_type.py) - 사각형 그리기 / 라인 타입 차이점
 
 
 * [08](08_put_text.py) - 문자 출력
@@ -21,9 +22,10 @@
 * [10](10_draw_ellipse.py) - 타원 호 그리기
 
 
-* [11](11_read_image_01_cv.py) - 영상 파일 일기 (OpenCV 모듈만 사용)
-* [11](11_read_image_01_plt.py) - 영상 파일 일기 (Matplotlib 모듈로 출력)
-* [11](11_read_image_03.py) - 영상 파일 일기 01
+* [11-01](11_read_image_01_cv.py) - 영상 파일 일기 (OpenCV 모듈만 사용)
+* [11-02](11_read_image_02_plt.py) - 영상 파일 일기 (Matplotlib 모듈로 출력)
+* [11-02](11_read_image_02_plt.ipynb) - 영상 파일 일기 (쥬피터 노트북 사용)
+* [11-03](11_read_image_03.py) - 영상 파일 일기 01
   
 * [12](12_read_image_04.ipynb) - 영상 파일 일기 02
 * [13](13_read_image_05.ipynb) - 영상 파일 일기 02
