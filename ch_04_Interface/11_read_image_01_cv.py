@@ -1,6 +1,5 @@
 # 11_read_image_01_cv.py
 import cv2
-from matplotlib import pyplot as plt
 
 # 현재 소스 파일의 폴더 경로
 from pathlib import Path
