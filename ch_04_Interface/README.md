@@ -21,7 +21,8 @@
 * [10](10_draw_ellipse.py) - 타원 호 그리기
 
 
-* [11](11_read_image01.ipynb) - 영상 파일 일기 01
+* [11](11_read_image01.py) - 영상 파일 일기 01
+*   
 * [12](12_read_image02.ipynb) - 영상 파일 일기 02
 * [13](13_read_image03.ipynb) - 영상 파일 일기 02
 * 
