@@ -24,7 +24,7 @@ print_mat_info( gray2gray )
 print_mat_info( gray2color )
 
 cv2.imshow( "gray2gray" , gray2gray )
-cv2.imshow( "gray2color" , gray2gray )
+cv2.imshow( "gray2color" , gray2color )
 
 cv2.waitKey( 0 )
 cv2.destroyAllWindows()

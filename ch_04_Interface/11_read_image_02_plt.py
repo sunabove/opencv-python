@@ -9,7 +9,6 @@ dir = Path( __file__ ).resolve().parent
 # 영상 파일 읽기
 image = cv2.imread( dir.joinpath( "./img/read_color.jpg" ) )
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-image = image[ :, :, ::-1 ]
 
 # BGR 영상을 RGB 영상으로 변경
 plt.imshow( cv2.cvtColor(image, cv2.COLOR_BGR2RGB) )
