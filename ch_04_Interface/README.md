@@ -21,11 +21,12 @@
 * [10](10_draw_ellipse.py) - 타원 호 그리기
 
 
-* [11](11_read_image_00.py) - 영상 파일 일기 00
-* [11](11_read_image_01.py) - 영상 파일 일기 01
+* [11](11_read_image_01_cv.py) - 영상 파일 일기 (OpenCV 모듈만 사용)
+* [11](11_read_image_01_plt.py) - 영상 파일 일기 (Matplotlib 모듈로 출력)
+* [11](11_read_image_03.py) - 영상 파일 일기 01
   
-* [12](12_read_image_02.ipynb) - 영상 파일 일기 02
-* [13](13_read_image_03.ipynb) - 영상 파일 일기 02
+* [12](12_read_image_04.ipynb) - 영상 파일 일기 02
+* [13](13_read_image_05.ipynb) - 영상 파일 일기 02
 * 
 * [14](14_write_image_01.ipynb) - 행렬 영상 저장 01
 * [15](15_write_image_02.ipynb) - 행렬 영상 저장 02

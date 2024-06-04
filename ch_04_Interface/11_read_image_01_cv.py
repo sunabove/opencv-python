@@ -7,7 +7,8 @@ from pathlib import Path
 dir = Path( __file__ ).resolve().parent
 
 # 컬러 영상으로 읽음.
-image = cv2.imread( dir.joinpath( "./img/read_color.jpg" ), cv2.IMREAD_COLOR)
+image = cv2.imread( dir.joinpath( "./img/read_color.jpg" ) )
 
-plt.imshow( image )
-plt.show()
+cv2.imshow( "OpenCV" ,image )
+cv2.waitKey( 0 )
+cv2.destroyAllWindows()
