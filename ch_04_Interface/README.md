@@ -5,35 +5,28 @@
 
 * [03](03_event_key.py) - 키 이벤트 사용 
 
-
 * [04](04_event_mouse.py) - 마우스 이벤트 
 
 * [05](05_event_trackbar.py) - 트랙바 이벤트
 * [06](06_event_mouse_trackbar.py) - 마우스 & 트랙바 이벤트 
 
-
 * [07-01](07_draw_line.py) - 직선 그리기
 * [07-02](07_draw_rect.py) - 사각형 그리기
 * [07-03](07_draw_rect_line_type.py) - 사각형 그리기 / 라인 타입 차이점
-
 
 * [08](08_put_text.py) - 문자 출력
 * [09](09_draw_circle.py) - 원 그리기
 * [10](10_draw_ellipse.py) - 타원 호 그리기
 
-
 * [11-01](11_read_image_01_cv.py) - 영상 파일 일기 (OpenCV 모듈만 사용)
 * [11-02](11_read_image_02_plt.py) - 영상 파일 일기 (Matplotlib 모듈로 출력)
 * [11-02](11_read_image_02_plt.ipynb) - 영상 파일 일기 (쥬피터 노트북 사용)
-* [11-03](11_read_image_03.py) - 영상 파일 일기 01
+* [11-03](11_read_image_03_grayscale.py) - 영상 파일 일기 01
   
-* [12](12_read_image_04.ipynb) - 영상 파일 일기 02
-* [13](13_read_image_05.ipynb) - 영상 파일 일기 02
-* 
 * [14](14_write_image_01.ipynb) - 행렬 영상 저장 01
 * [15](15_write_image_02.ipynb) - 행렬 영상 저장 02
 
-* [info](16_info_VideoCapture.ipynb) - VideoCapture 함수 설명
+* [16](16_info_VideoCapture.ipynb) - VideoCapture 함수 설명
 * [16](16_read_camera.ipynb) - 카메라 프레임 읽기
 * [17](17_set_camera_atty.ipynb) - 카메라 속성 설정
 * [18](18_write_camera_frame.ipynb) - 카메라 프레임 동영상파일로 저장
