@@ -24,8 +24,8 @@
 * [11-03](11_read_image_03_grayscale.py) - 그레이스케일 영상 파일 읽기
 * [11-05](13_read_image_05_32bit_image.py) - 32 비트 영상 파일 읽기
   
-* [14](14_write_image_01.ipynb) - 행렬 영상 저장 01
-* [15](15_write_image_02.ipynb) - 행렬 영상 저장 02
+* [14](14_write_image_01.py) - 행렬 영상 저장 01
+* [15](15_write_image_02.py) - 행렬 영상 저장 02
 
 * [16](16_info_VideoCapture.ipynb) - VideoCapture 함수 설명
 * [16](16_read_camera.ipynb) - 카메라 프레임 읽기
