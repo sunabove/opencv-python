@@ -14,7 +14,7 @@ fourcc = cv2.VideoWriter_fourcc(*'DX50')         # 압축 코덱 설정
 
 # 카메라 속성 콘솔창에 출력
 print("프레임 해상도:", size )
-print("압축코덱 숫자:", fourcc)
+print("압축 코덱 숫자:", fourcc)
 print("delay: %2d ms" % delay)
 print("fps: %.2f" % fps)
 
@@ -33,13 +33,13 @@ writer = cv2.VideoWriter( filename=filename, fourcc=fourcc, fps=fps, frameSize=s
 
 if writer.isOpened() == False: raise Exception("동영상 파일 쓰기 불가")
 
-while True:
+while True: # 무한 반복
     ret, frame = capture.read()             # 카메라 영상 받기
-    if not ret: break
-    if cv2.waitKey(delay) >= 0: break
+    if not ret: break  # 최근접 루프 탈출
+    if cv2.waitKey( delay ) >= 0: break # 최근접 루프 탈출
 
-    writer.write(frame)                 # 프레임을 동영상으로 저장
-    cv2.imshow("View Frame from Camera", frame)
+    writer.write( frame )               # 프레임을 동영상으로 저장
+    cv2.imshow( "View Frame from Camera" , frame)
 pass
 
 writer.release()   # 쓰기 동영상 파일 자원 해제
