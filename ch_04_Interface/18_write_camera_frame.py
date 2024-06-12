@@ -6,7 +6,7 @@ capture = cv2.VideoCapture(0)    # 0번 카메라 연결
 if capture.isOpened() == False: raise Exception("카메라 연결 안됨")
 
 fps = capture.get(cv2.CAP_PROP_FPS)              # 초당 프레임 수
-delay = round(1000/ fps)                         # 프레임 간 지연 시간
+delay = round(1000/fps)                          # 프레임 간 지연 시간
 width = int( capture.get(cv2.CAP_PROP_FRAME_WIDTH) )   # 동영상 넓이
 height = int( capture.get(cv2.CAP_PROP_FRAME_HEIGHT) )  # 동영상 높이
 size  = ( width, height )                        # 동영상 파일 해상도
@@ -19,7 +19,7 @@ print("delay: %2d ms" % delay)
 print("fps: %.2f" % fps)
 
 capture.set(cv2.CAP_PROP_ZOOM, 1)                 # 카메라 속성 지정
-capture.set(cv2.CAP_PROP_FOCUS, 0)
+capture.set(cv2.CAP_PROP_FOCUS, 0)                # 카메라 포커서 설정
 capture.set(cv2.CAP_PROP_FRAME_WIDTH , size[0])   # 해상도 넓이 설정
 capture.set(cv2.CAP_PROP_FRAME_HEIGHT, size[1])   # 해상도 높이 설정
 

@@ -33,7 +33,7 @@
 * [16](16_read_camera.py) - 카메라 프레임 읽기
 * [17](17_set_camera_atty.py) - 카메라 속성 설정
 * 
-* [18](18_write_camera_frame.ipynb) - 카메라 프레임 동영상파일로 저장
+* [18](18_write_camera_frame.py) - 카메라 프레임 동영상파일로 저장
 * [19](19_read_video_file.ipynb) - 동영상 파일 읽기
 
 * [info](20_matplotlib_info.ipynb) - Matplotlib 함수 설명
