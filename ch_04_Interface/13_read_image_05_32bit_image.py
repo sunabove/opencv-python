@@ -30,4 +30,4 @@ print_mat_info( color2unchanged2 )
 
 cv2.imshow(title1, color2unchanged1 )
 cv2.imshow(title2, (color2unchanged2*255).astype("uint8"))
-cv2.waitKey(0)
+cv2.waitKey(0) # 키 입력 대기
