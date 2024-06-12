@@ -5,10 +5,10 @@ import cv2
 capture = cv2.VideoCapture(0)    # 0번 카메라 연결
 if capture.isOpened() == False: raise Exception("카메라 연결 안됨")
 
-fps = capture.get(cv2.CAP_PROP_FPS)              # 초당 프레임 수
-delay = round( 1_000/fps )                          # 프레임 간 지연 시간
+fps = capture.get( cv2.CAP_PROP_FPS )            # 초당 프레임 수
+delay = round( 1_000/fps )                       # 프레임 간 지연 시간
 width = int( capture.get(cv2.CAP_PROP_FRAME_WIDTH) )   # 동영상 넓이
-height = int( capture.get(cv2.CAP_PROP_FRAME_HEIGHT) )  # 동영상 높이
+height = int( capture.get(cv2.CAP_PROP_FRAME_HEIGHT) ) # 동영상 높이
 size  = ( width, height )                        # 동영상 파일 해상도
 fourcc = cv2.VideoWriter_fourcc(*'DX50')         # 압축 코덱 설정
 
