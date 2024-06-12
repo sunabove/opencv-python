@@ -11,6 +11,7 @@ img = cv2.imread( dir.joinpath( "img/video_input_01.png") )
 # 정지 영상의 높이, 폭, 채널
 height, width, channels = img.shape
 
+# 정지 영상 출력
 cv2.imshow( "image", img)
 
 # 코덱 정의
