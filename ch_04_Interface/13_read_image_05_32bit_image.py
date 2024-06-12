@@ -1,4 +1,4 @@
-# 13_read_image_05_32bit_image
+# 13_read_image_05_32bit_image.py
 import cv2
 from matplotlib import pyplot as plt
 
