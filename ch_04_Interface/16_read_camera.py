@@ -29,7 +29,7 @@ print("밝기 %d" % capture.get(cv2.CAP_PROP_BRIGHTNESS))
 
 while True:  # 무한 반복
     ret, frame = capture.read()  # 카메라 영상 받기
-    if not ret: break # 영상을 못 읽었을 경우
+    if not ret: break # 영상을 못 읽었을 경우, 루프 해제
     if cv2.waitKey(30) >= 0: # ESC 키 입력시 루프 해제
         break
 

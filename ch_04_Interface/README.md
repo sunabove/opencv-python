@@ -30,7 +30,8 @@
 * [16](16_info_VideoCapture.ipynb) - VideoCapture 함수 설명
 * 
 * [16](16_read_camera.py) - 카메라 프레임 읽기
-* [17](17_set_camera_atty.ipynb) - 카메라 속성 설정
+* [17](17_set_camera_atty.py) - 카메라 속성 설정
+* 
 * [18](18_write_camera_frame.ipynb) - 카메라 프레임 동영상파일로 저장
 * [19](19_read_video_file.ipynb) - 동영상 파일 읽기
 
