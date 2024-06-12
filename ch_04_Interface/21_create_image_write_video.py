@@ -13,9 +13,6 @@ b = np.zeros( size, dtype = 'uint8')
 g = np.zeros( size, dtype = 'uint8')
 r = np.zeros( size, dtype = 'uint8')
 
-fourcc = cv2.VideoWriter_fourcc( *'MP4V' )
-out = cv2.VideoWriter( 'output.mp4', fourcc, 10, (width, height))
-
 # 코덱 정의
 fourcc = cv2.VideoWriter_fourcc( *"MP4V")
 # 비디오 출력 파일 
@@ -33,6 +30,6 @@ for i in range( width ):
     out.write(frame)
 pass
 
-out.release()
+out.release() # 출력 파일 자원 해제
 
 print( "동영상 변환 완료" )
