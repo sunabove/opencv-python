@@ -20,16 +20,15 @@ print("fps: %.2f" % fps)
 
 capture.set(cv2.CAP_PROP_ZOOM, 1)                 # 카메라 속성 지정
 capture.set(cv2.CAP_PROP_FOCUS, 0)
-capture.set(cv2.CAP_PROP_FRAME_WIDTH , size[0])   # 해상도 설정
-capture.set(cv2.CAP_PROP_FRAME_HEIGHT, size[1])
+capture.set(cv2.CAP_PROP_FRAME_WIDTH , size[0])   # 해상도 넓이 설정
+capture.set(cv2.CAP_PROP_FRAME_HEIGHT, size[1])   # 해상도 높이 설정
 
 # 현재 소스 파일의 폴더 경로
 from pathlib import Path
 dir = Path( __file__ ).resolve().parent
 
 # 동영상 파일 개방 및 코덱, 해상도 설정
-#writer = cv2.VideoWriter( dir.joinpath( "img/video_file.avi" ), fourcc, fps, size)
-filename = filename=dir.joinpath( "img/video_file.avi" )
+filename = dir.joinpath( "img/video_file.avi" )
 writer = cv2.VideoWriter( filename=filename, fourcc=fourcc, fps=fps, frameSize=size )
 
 if writer.isOpened() == False: raise Exception("동영상 파일 쓰기 불가")
