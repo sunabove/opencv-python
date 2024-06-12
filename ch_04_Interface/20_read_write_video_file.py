@@ -26,9 +26,12 @@ for i in range(100):
     b = b + 1  
     # 채널 합치기
     frame = cv2.merge([b, g ,r ] )
+
     # 비디오 프레임 쓰기
     out.write(frame)
 pass
 
+print( "동영상 저장 완료" )
+
 out.release() # 비디오 쓰기 파일 해제
-cv2.waitKey( 0 )  # 키 입력 무한 대기
+cv2.waitKey( 2000 )  # 키 입력 2초간 대기

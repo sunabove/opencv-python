@@ -36,7 +36,8 @@
 * [18](18_write_camera_frame.py) - 카메라 프레임 동영상파일로 저장
 * [19](19_read_video_file.py) - 동영상 파일 읽기
 * 
-* [20](20_read_write_video_file.py) - 동영상 파일 읽기 및 변환 저장
+* [20](20_read_write_video_file.py) - 정지 영상 파일 읽기 및 변환 동영상 저장
+* [21](21_create_image_write_video.py) - 정지 영상 생성 및 변환 동영상 저장
 
 * [info](23_matplotlib_info.ipynb) - Matplotlib 함수 설명
 * [23](23_matplatlib.ipynb) - Matplotlib 라이브러리로 영상 표시
