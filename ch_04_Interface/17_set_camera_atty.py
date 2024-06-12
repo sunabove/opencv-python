@@ -2,6 +2,16 @@
 
 import cv2
 
+capture = cv2.VideoCapture( 0 )   # 카메라 캡쳐
+
+if capture.isOpened() is None: raise Exception("카메라 연결 안됨")
+
+capture.set(cv2.CAP_PROP_SETTINGS, 1)           # 카메라 속성 설정 가능
+capture.set(cv2.CAP_PROP_FRAME_WIDTH, 400)      # 카메라 프레임 너비
+capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 300)     # 카메라 프레임 높이
+capture.set(cv2.CAP_PROP_AUTOFOCUS, 0)          # 오토포커싱 중지
+capture.set(cv2.CAP_PROP_BRIGHTNESS, 100)       # 프레임 밝기 초기화
+
 # 그림자 문자 출력
 def put_string(frame, text, pt, value=None, color=(120, 200, 90)) :
     text = str(text) + str(value)
@@ -9,30 +19,35 @@ def put_string(frame, text, pt, value=None, color=(120, 200, 90)) :
     font = cv2.FONT_HERSHEY_SIMPLEX
     cv2.putText(frame, text, shade, font, 0.7, (0, 0, 0), 2) # 그림자 효과
     cv2.putText(frame, text, pt   , font, 0.7, color, 2) # 작성 문자
+pass
 
 # 줌 트랙바 콜백 함수
 def zoom_bar(value):
-    global capture
-    capture.set(cv2.CAP_PROP_ZOOM, value) # 줌 설정 
+    print( "zoom bar 1 = ", value, flush=1 )
+    capture.set(cv2.CAP_PROP_ZOOM, value) # 줌 설정
+    print( "zoom bar 2 = ", capture.get(cv2.CAP_PROP_ZOOM), flush=1 )
+pass
 
 # 포커스 트랙바 콜백 함수
 def focus_bar(value):
-    global capture
+    print( "focus bar 1 = ", value, flush=1 )
     capture.set(cv2.CAP_PROP_FOCUS, value)
+    print( "focus bar 2 = ", capture.get(cv2.CAP_PROP_FOCUS), flush=1 )
+pass
 
-capture = cv2.VideoCapture(0)
+# 명암 트랙바 콜백 함수
+def brightness_bar(value):
+    print( "brightness bar 1 = ", value, flush=1 )
+    capture.set(cv2.CAP_PROP_BRIGHTNESS, value)
+    print( "brightness bar 2 = ", capture.get(cv2.CAP_PROP_BRIGHTNESS), flush=1 )
+pass
 
-if capture.isOpened() is None: raise Exception("카메라 연결 안됨")
+title = "Change Camera Properties"  # 윈도우 이름 지정
+cv2.namedWindow(title)              # 윈도우 생성
 
-capture.set(cv2.CAP_PROP_FRAME_WIDTH, 400)      # 카메라 프레임 너비
-capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 300)     # 카메라 프레임 높이
-capture.set(cv2.CAP_PROP_AUTOFOCUS, 0)          # 오토포커싱 중지
-capture.set(cv2.CAP_PROP_BRIGHTNESS, 100)       # 프레임 밝기 초기화
-
-title = "Change Camera Properties"              # 윈도우 이름 지정
-cv2.namedWindow(title)                          # 윈도우 생성 - 반드시 생성 해야함
 cv2.createTrackbar("zoom" , title, 0, 10, zoom_bar)
 cv2.createTrackbar("focus", title, 0, 40, focus_bar)
+cv2.createTrackbar("brightness", title, 0, 100, brightness_bar)
 
 while True:
     ret, frame = capture.read()     # 카메라 영상 읽기
@@ -42,9 +57,11 @@ while True:
 
     zoom = int(capture.get(cv2.CAP_PROP_ZOOM))
     focus = int(capture.get(cv2.CAP_PROP_FOCUS))
+    brightness = int(capture.get(cv2.CAP_PROP_BRIGHTNESS))
 
     put_string(frame, "zoom : " , (10, 240), zoom)   # 줌 값 표시
     put_string(frame, "focus : ", (10, 270), focus)    # 초점 값 표시 
+    put_string(frame, "brightness : ", (10, 300), brightness)   # 명암 값 표시 
 
     cv2.imshow(title, frame) # 영상 출력
 pass
