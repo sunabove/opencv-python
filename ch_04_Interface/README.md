@@ -22,6 +22,7 @@
 * [11-02](11_read_image_02_plt.py) - 영상 파일 읽기 (Matplotlib 모듈로 출력)
 * [11-02](11_read_image_02_plt.ipynb) - 영상 파일 읽기 (쥬피터 노트북 사용)
 * [11-03](11_read_image_03_grayscale.py) - 그레이스케일 영상 파일 읽기
+* 
 * [11-05](13_read_image_05_32bit_image.py) - 32 비트 영상 파일 읽기
   
 * [14](14_write_image_01.py) - 행렬 영상 저장 01
