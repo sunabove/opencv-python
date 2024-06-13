@@ -42,9 +42,14 @@
 * [info](22_matplotlib_info.ipynb)        - Matplotlib 함수 설명
 * 
 * [23](23_matplatlib_basic_plot.py)       - Matplotlib 기본 플롯
+* [23](23_matplatlib_basic_plot.ipynb)    - Matplotlib 기본 플롯 (Jupyter)
+
 * [24](24_matplatlib_sub_plot.py)         - Matplotlib 다양한 플롯
+* [24](24_matplatlib_sub_plot.ipynb)      - Matplotlib 다양한 플롯 (Jupyter)
   
-* [25](25_matplatlib_imshow.py)           - Matplotlib 라이브러리로 영상 표시
+* [25](25_matplatlib_imshow.py)           - Matplotlib 영상 출력
+* [25](25_matplatlib_imshow.ipynb)           - Matplotlib 영상 출력 (Jupyter)
+* 
 * [26](26_matplotlib_interplation.ipynb)  - Matplotlib 서브 플롯 및 보간 적용
 * [27](27_matplotlib_plot.ipynb)          - Matplotlib 그래프 그리기
  

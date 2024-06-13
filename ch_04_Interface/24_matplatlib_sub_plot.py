@@ -21,7 +21,7 @@ plt.subplot(2, 1, 2)
 plt.plot(x, y2)
 plt.title('Cosine')
 
-# 레이아웃을 조정하여 그림 요소가 겹치지 않도록 합니다.
+# 레이아웃을 조정하여 그림 중첩 방지
 plt.tight_layout() 
 # 그래프 표시
 plt.show()

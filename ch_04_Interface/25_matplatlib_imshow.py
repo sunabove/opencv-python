@@ -1,4 +1,4 @@
-# 23_matplatlib.py
+# 23_matplatlib_imshow.py
 
 import cv2
 import matplotlib.pyplot as plt
