@@ -33,6 +33,12 @@ while True:
     elif 200 <= frame_cnt < 300: cv2.add(green, 100, green) # green 채널 밝기 증가
     elif 300 <= frame_cnt < 400: cv2.add(red  , 100, red)   # red 채널 밝기 증가
 
+    '''
+    if 100 <= frame_cnt < 200: blue += 100     # blue 채널 밝기 증가
+    elif 200 <= frame_cnt < 300: green += 100  # green 채널 밝기 증가
+    elif 300 <= frame_cnt < 400: red += 100    # red 채널 밝기 증가
+    '''
+
     frame = cv2.merge( [blue, green, red] )                 # 단일채널 영상 합성
     put_string(frame, "frame_cnt : ", (20, height//2), frame_cnt)
     cv2.imshow("Read Video File", frame)

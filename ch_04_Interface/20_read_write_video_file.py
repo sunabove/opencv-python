@@ -9,6 +9,7 @@ dir = Path( __file__ ).resolve().parent
 # 정지 영상 읽기
 img = cv2.imread( dir.joinpath( "img/video_input_01.png") )
 # 정지 영상의 높이, 폭, 채널
+( height, width, channels ) = img.shape
 height, width, channels = img.shape
 
 # 정지 영상 출력
@@ -21,14 +22,16 @@ out = cv2.VideoWriter( dir.joinpath( "img/video_output_01.mp4" ), fourcc, 10, (w
 
 # 채널 분리
 (b, g, r) = cv2.split( img )
-for i in range(100):
+for i in range( 300 ):
     # blue 채널의 값들을 1씩 증가 시킴
-    b = b + 1  
+    #b = b + 1
+    #b = b - 1
+    b += 1
     # 채널 합치기
     frame = cv2.merge([b, g ,r ] )
 
     # 비디오 프레임 쓰기
-    out.write(frame)
+    out.write( frame )
 pass
 
 print( "동영상 저장 완료" )

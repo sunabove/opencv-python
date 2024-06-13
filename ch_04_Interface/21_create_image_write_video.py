@@ -9,12 +9,12 @@ dir = Path( __file__ ).resolve().parent
 
 # blue, green, red 채널 영상 생성
 size = (height, width) = (256, 255)
-b = np.zeros( size, dtype = 'uint8')
-g = np.zeros( size, dtype = 'uint8')
-r = np.zeros( size, dtype = 'uint8')
+b = np.zeros( size, dtype = 'uint8' )
+g = np.zeros( size, dtype = 'uint8' )
+r = np.zeros( size, dtype = 'uint8' )
 
 # 코덱 정의
-fourcc = cv2.VideoWriter_fourcc( *"MP4V")
+fourcc = cv2.VideoWriter_fourcc( *"MP4V" )
 # 비디오 출력 파일 
 out = cv2.VideoWriter( dir.joinpath( "img/video_output_02.mp4" ), fourcc, 10, (width, height))
 
@@ -26,7 +26,7 @@ for i in range( width ):
     # 첫 번째 행부터 마지막 ​​행까지 적색의 강도를 0으로 설정합니다.
     r[ :, i ] = 0
 
-    frame = cv2.merge([b, g ,r ] )
+    frame = cv2.merge( [ b, g ,r ] )
     out.write(frame)
 pass
 
