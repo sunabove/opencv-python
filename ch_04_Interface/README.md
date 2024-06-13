@@ -30,17 +30,21 @@
 
 * [16](16_info_VideoCapture.ipynb) - VideoCapture 함수 설명
 * 
-* [16](16_read_camera.py) - 카메라 프레임 읽기
+* [16](16_read_camera.py)     - 카메라 프레임 읽기
 * [17](17_set_camera_atty.py) - 카메라 속성 설정
 * 
 * [18](18_write_camera_frame.py) - 카메라 프레임 동영상파일로 저장
-* [19](19_read_video_file.py) - 동영상 파일 읽기
+* [19](19_read_video_file.py)    - 동영상 파일 읽기
 * 
-* [20](20_read_write_video_file.py) - 정지 영상 파일 읽기 및 변환 동영상 저장
+* [20](20_read_write_video_file.py)    - 정지 영상 파일 읽기 및 변환 동영상 저장
 * [21](21_create_image_write_video.py) - 정지 영상 생성 및 변환 동영상 저장
 
-* [info](23_matplotlib_info.ipynb) - Matplotlib 함수 설명
-* [23](23_matplatlib.ipynb) - Matplotlib 라이브러리로 영상 표시
-* [24](24_matplotlib_interplation.ipynb) - Matplotlib 서브 플롯 및 보간 적용
-* [25](25_matplotlib_plot.ipynb) - Matplotlib 그래프 그리기
+* [info](22_matplotlib_info.ipynb)        - Matplotlib 함수 설명
+* 
+* [23](23_matplatlib_basic_plot.py)       - Matplotlib 기본 플롯
+* [24](24_matplatlib_sub_plot.py)         - Matplotlib 다양한 플롯
+  
+* [25](25_matplatlib_imshow.py)           - Matplotlib 라이브러리로 영상 표시
+* [26](26_matplotlib_interplation.ipynb)  - Matplotlib 서브 플롯 및 보간 적용
+* [27](27_matplotlib_plot.ipynb)          - Matplotlib 그래프 그리기
  
