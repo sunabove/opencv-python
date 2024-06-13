@@ -48,8 +48,10 @@
 * [24](24_matplatlib_sub_plot.ipynb)      - Matplotlib 다양한 플롯 (Jupyter)
   
 * [25](25_matplatlib_imshow.py)           - Matplotlib 영상 출력
-* [25](25_matplatlib_imshow.ipynb)           - Matplotlib 영상 출력 (Jupyter)
+* [25](25_matplatlib_imshow.ipynb)        - Matplotlib 영상 출력 (Jupyter)
 * 
-* [26](26_matplotlib_interplation.ipynb)  - Matplotlib 서브 플롯 및 보간 적용
-* [27](27_matplotlib_plot.ipynb)          - Matplotlib 그래프 그리기
+* [26](26_matplotlib_interplation.py)     - Matplotlib 서브 플롯 및 보간 적용
+* [26](26_matplotlib_interplation.ipynb)  - Matplotlib 서브 플롯 및 보간 적용 (Jupyter)
+* 
+* [27](27_matplotlib_np_plot.ipynb)       - Matplotlib 그래프 그리기 (Jupyter)
  
