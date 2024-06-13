@@ -53,5 +53,6 @@
 * [26](26_matplotlib_interplation.py)     - Matplotlib 서브 플롯 및 보간 적용
 * [26](26_matplotlib_interplation.ipynb)  - Matplotlib 서브 플롯 및 보간 적용 (Jupyter)
 * 
+* [27](27_matplotlib_np_plot.py)          - Matplotlib 그래프 그리기
 * [27](27_matplotlib_np_plot.ipynb)       - Matplotlib 그래프 그리기 (Jupyter)
  
