@@ -1,10 +1,14 @@
-# 23_matplatlib_basic_plot.py
+# 23_matplatlib_basic_plot_np.py
 
 import matplotlib.pyplot as plt
+import numpy as np
 
 # 데이터 생성
-x = [1, 2, 3, 4, 5]
-y = [1, 3, 5, 7, 9]
+#x = [1, 2, 3, 4, 5]
+#y = [1, 3, 5, 7, 9]
+
+x = np.arange( 1, 5 + 1 )
+y = np.arange( 1, 9 + 1, 2 )
 
 # 그래프 생성
 plt.plot( x, y )

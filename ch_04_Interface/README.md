@@ -43,6 +43,7 @@
 * 
 * [23](23_matplatlib_basic_plot.py)       - Matplotlib 기본 플롯
 * [23](23_matplatlib_basic_plot.ipynb)    - Matplotlib 기본 플롯 (Jupyter)
+* [23](23_matplatlib_basic_plot_np.py)    - Matplotlib 기본 플롯 (Numpy 사용)
 
 * [24](24_matplatlib_sub_plot.py)         - Matplotlib 다양한 플롯
 * [24](24_matplatlib_sub_plot.ipynb)      - Matplotlib 다양한 플롯 (Jupyter)
