@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # 데이터 생성
 x = [1, 2, 3, 4, 5]
-y = [2, 3, 5, 7, 11]
+y = [2, 3, 5, 7, 9]
 
 # 그래프 생성
 plt.plot(x, y)
