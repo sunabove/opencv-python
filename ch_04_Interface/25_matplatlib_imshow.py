@@ -1,4 +1,4 @@
-# 23_matplatlib_imshow.py
+# 25_matplatlib_imshow.py
 
 import cv2
 import matplotlib.pyplot as plt
@@ -43,5 +43,6 @@ plt.subplot(1, 2, 2)
 plt.imshow(gray_img, cmap='gray')
 plt.title('gray_img2')
 
+plt.tight_layout() # 레이아웃을 조정하여 챠트 요소가 겹치지 않도록 합니다.
 # 모든 플롯을 화면에 표시합니다.
 plt.show()

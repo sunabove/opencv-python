@@ -5,16 +5,16 @@ import numpy as np
 from pathlib import Path
 
 # 현재 소스 파일의 폴더 경로를 가져옵니다.
-dir = Path(__file__).resolve().parent
+dir = Path( __file__ ).resolve().parent
 
 # x와 y 데이터 생성
-x = np.arange(10)
+x  = np.arange(10)
 y1 = np.arange(10)
 y2 = np.arange(10)**2
 y3 = np.random.choice(50, size=10)
 
 # 그림 객체 생성 - 그래프 크기 지정 (단위: 인치)
-plt.figure(figsize=(5,3))
+plt.figure(figsize=(10,6))
 
 # y1 데이터를 파란색 파선으로 그리기
 plt.plot(x, y1, 'b--', linewidth=2)

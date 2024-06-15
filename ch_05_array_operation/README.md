@@ -3,7 +3,7 @@
 - OpenCV는 연산을 위한 파이선 패키지인 넘파이( numpy)와 연동해 배열을 생성할 수 있으며, 
 - 이런 배열을 처리할 수 있는 다양한 연산 함수를 지원한다
 
-* [01](mat_array.ipynb) - 행렬 처리 함수
+* [01](01.mat_array.ipynb) - 행렬 처리 함수
 
 * [02](02.mat_channel.ipynb) - 채널 분리 및 함성
 
@@ -12,7 +12,7 @@
 * [04](arithmethic.ipynb) - 행렬 산술 연산
 
 * [05](exp_log.ipynb) - 행렬 지수 및 로그 연산
-    * [info](exp_log_magnitude_info.ipynb) - 지수, 로그, 제곱근 관련 함수
+* [info](exp_log_magnitude_info.ipynb) - 지수, 로그, 제곱근 관련 함수
 * [06](magnitude.ipynb) - 행렬 크기 및 위상 연산
     
 * [07](07.bitwise_op.ipynb) - 행렬 비트 연산
