@@ -1,7 +1,7 @@
 # 기본 배열 연산 
 
-- OpenCV는 연산을 위한 파이선 패키지인 넘파이( numpy)와 연동해 배열을 생성할 수 있으며, 
-- 이런 배열을 처리할 수 있는 다양한 연산 함수를 지원한다
+- OpenCV는 연산을 위한 파이선 패키지인 넘파이(numpy)와 연동해 배열을 생성할 수 있으며, 
+- 배열을 처리하는 다양한 함수를 지원한다
 
 * [01](01.mat_array.ipynb) - 행렬 처리 함수
 
@@ -25,7 +25,7 @@
 
 * [11](11.image_min_max.ipynb) - 영상 최소값 최대값 연산
 
-    * [info](statistics_info.ipynb) - 통계 관련 함수 
+* [info](statistics_info.ipynb) - 통계 관련 함수 
 * [12](12.sum_avg.ipynb) - 행렬 합/평균 연산
 
 * [13](13.sort.ipynb) - 행렬 원소 정렬
