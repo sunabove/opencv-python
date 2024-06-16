@@ -47,8 +47,8 @@ while camera.isOpened() and count < 400 :
 
     # 프레임에 사각형 그리기
     th = thickness = 6                      # 사각형 선의 두께
-    start_point = (th, th)                  # 사각형의 시작점
-    end_point = ( width//2, height  - th)   # 사각형의 끝점
+    start_point = ( th, th )                  # 사각형의 시작점
+    end_point = ( width//2, height - th)   # 사각형의 끝점
     color = (0, 255, 255)      # 사각형의 색 (BGR: 파랑, 초록, 빨강)
     cv2.rectangle(frame, start_point, end_point, color, thickness)
 
