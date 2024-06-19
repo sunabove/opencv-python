@@ -18,7 +18,8 @@ cv2.imshow( "image", img)
 # 코덱 정의
 fourcc = cv2.VideoWriter_fourcc( *"H264")
 # 비디오 출력 파일 
-out = cv2.VideoWriter( dir.joinpath( "img/video_output_01.mp4" ), fourcc, 10, (width, height))
+filename = dir.joinpath( "img/video_output_01.mp4" )
+out = cv2.VideoWriter( filename, fourcc, 10, (width, height))
 
 # 채널 분리
 (b, g, r) = cv2.split( img )
@@ -30,11 +31,14 @@ for i in range( 300 ):
     # 채널 합치기
     frame = cv2.merge([b, g ,r ] )
 
+    cv2.imshow( "image", frame)
+
+
     # 비디오 프레임 쓰기
     out.write( frame )
 pass
 
-print( "동영상 저장 완료" )
-
 out.release() # 비디오 쓰기 파일 해제
 cv2.waitKey( 2000 )  # 키 입력 2초간 대기
+
+print( f"동영상 저장 완료: {filename.name}" )

@@ -44,3 +44,5 @@ pass
 
 writer.release()   # 쓰기 동영상 파일 자원 해제
 capture.release()  # 캡쳐 카메라 자원 해제
+
+print( f"동영상 저장이 완료되었습니다. {filename.name}" )

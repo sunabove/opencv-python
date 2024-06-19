@@ -16,7 +16,8 @@ r = np.zeros( size, dtype = 'uint8' )
 # 코덱 정의
 fourcc = cv2.VideoWriter_fourcc( *"H264" )
 # 비디오 출력 파일 
-out = cv2.VideoWriter( dir.joinpath( "img/video_output_02.mp4" ), fourcc, 10, (width, height))
+filename = dir.joinpath( "img/video_output_02.mp4" )
+out = cv2.VideoWriter( filename, fourcc, 10, (width, height))
 
 for i in range( width ):
     # 첫 번째 열부터 마지막 ​​열까지 청색의 강도를 점차적으로 높입니다.
@@ -32,4 +33,4 @@ pass
 
 out.release() # 출력 파일 자원 해제
 
-print( "동영상 변환 완료" )
+print( f"동영상 변환 완료: {filename.name}" )
