@@ -16,7 +16,7 @@ height, width, channels = img.shape
 cv2.imshow( "image", img)
 
 # 코덱 정의
-fourcc = cv2.VideoWriter_fourcc( *"MP4V")
+fourcc = cv2.VideoWriter_fourcc( *"H264")
 # 비디오 출력 파일 
 out = cv2.VideoWriter( dir.joinpath( "img/video_output_01.mp4" ), fourcc, 10, (width, height))
 

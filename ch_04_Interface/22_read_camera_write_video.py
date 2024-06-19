@@ -1,14 +1,15 @@
 # 22_read_camera_write_video.py
 
 import cv2
+from pathlib import Path
 
 # 비디오 캡처 객체 생성 (기본 카메라 사용)
 camera = cv2.VideoCapture(0)
 
 # 비디오 저장을 위한 설정
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-fileName = "output.mp4"
-out = cv2.VideoWriter( fileName, fourcc, 20.0, (640, 480) )
+fourcc = cv2.VideoWriter_fourcc(*'H264')
+dir = Path( __file__ ).resolve().parent # 현재 소스 폴더
+out = cv2.VideoWriter( dir.joinpath( "img/output.mp4" ), fourcc, 20.0, (640, 480) )
 
 name = "Your Name"  # 여기에 자신의 이름을 입력하세요
 
