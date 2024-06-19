@@ -28,9 +28,15 @@ for i in range( width ):
     r[ :, i ] = 0
 
     frame = cv2.merge( [ b, g ,r ] )
+
+    cv2.imshow( "image", frame)
+
+    cv2.waitKey( 100 )
+
     out.write(frame)
 pass
 
 out.release() # 출력 파일 자원 해제
+cv2.waitKey( 2000 )  # 키 입력 2초간 대기
 
 print( f"동영상 변환 완료: {filename.name}" )

@@ -33,7 +33,6 @@ for i in range( 300 ):
 
     cv2.imshow( "image", frame)
 
-
     # 비디오 프레임 쓰기
     out.write( frame )
 pass
