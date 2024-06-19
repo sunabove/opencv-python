@@ -28,7 +28,7 @@ from pathlib import Path
 dir = Path( __file__ ).resolve().parent
 
 # 동영상 파일 개방 및 코덱, 해상도 설정
-filename = dir.joinpath( "img/write_video.avi" )
+filename = dir.joinpath( "img/write_video.mp4" )
 writer = cv2.VideoWriter( filename=filename, fourcc=fourcc, fps=fps, frameSize=size )
 
 if writer.isOpened() == False: raise Exception("동영상 파일 쓰기 불가")
