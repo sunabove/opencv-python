@@ -1,4 +1,3 @@
-# coding: utf-8
 import cv2, numpy as np
 
 h = 100; w = 200; shape = (h, w)

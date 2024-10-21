@@ -1,4 +1,3 @@
-# coding: utf-8
 import cv2, numpy as np
 
 gray = np.empty( (100, 200) )
