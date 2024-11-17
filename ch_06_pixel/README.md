@@ -4,8 +4,6 @@
 
 * [01](0100_mat_access.ipynb) - 행렬 원소 접근 방법 
 
-* [02](0200_image_access.ipynb) - Mat::ptr() 행렬 원소 접근
-
 * [03](0300_grayscale_image.ipynb) - 명암도 영상 생성
 
 * [04](0400_pixel_value.ipynb) - 영상 화소값 확인
